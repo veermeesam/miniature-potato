@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NOVA X CYPHER</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-black text-white font-[Poppins]">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center p-6">
+  <img src="logo.png" class="h-10">
+  <div class="space-x-6">
+    <a href="#academy">Start Learning</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="text-center py-24 px-6">
+  <h1 class="text-5xl md:text-7xl font-bold gradient-text">
+    You Dream It. We Code It.
+  </h1>
+
+  <p class="mt-6 text-gray-300">
+    Turning your web and game development ideas into digital reality.
+  </p>
+
+  <div class="mt-8 space-x-4">
+    <button onclick="scrollToBuild()" class="btn-primary">Start a Project</button>
+    <button onclick="scrollToAcademy()" class="btn-secondary">Start Learning</button>
+  </div>
+</section>
+
+<!-- BUILD SECTION -->
+<section id="build" class="py-20 text-center px-6">
+  <h2 class="text-4xl mb-10">Build Your Vision</h2>
+
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="card">🌐 Web Development</div>
+    <div class="card">🎮 Game Design</div>
+    <div class="card">🎨 UI/UX Strategy</div>
+  </div>
+
+  <!-- IDEA FORM -->
+  <form id="projectForm" class="mt-10 max-w-md mx-auto space-y-4">
+    <input type="text" name="idea" placeholder="Your Idea" class="input" required>
+    <input type="email" name="email" placeholder="Email" class="input" required>
+    <button class="btn-primary w-full">Submit Idea</button>
+  </form>
+</section>
+
+<!-- ACADEMY -->
+<section id="academy" class="py-20 text-center terminal-bg px-6">
+  <h2 class="text-4xl mb-10">Course Roadmap</h2>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="card">Termux + Tools + AI Web Dev (Upcoming)</div>
+    <div class="card">Kali Linux Course (Upcoming)</div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section class="py-20 text-center">
+  <h2 class="text-3xl mb-6">Follow the Journey</h2>
+
+  <div class="flex justify-center gap-6">
+    <a href="https://www.instagram.com/novaxcypher?igsh=MXg3Y2d0b280MGlqeA==" target="_blank" class="glass-card">
+      Instagram
+    </a>
+
+    <a href="https://youtube.com/@novaxcypher?si=aJfHyb7jTUy40wty" target="_blank" class="glass-card">
+      YouTube
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 text-center px-6">
+  <h2 class="text-3xl mb-6">About Founder</h2>
+
+  <img src="founder.png" class="mx-auto w-40 rounded-full mb-4">
+
+  <p>
+    NOVA X CYPHER has been created by <b>raw_meesam</b> at the age of 17.
+  </p>
+
+  <a href="https://instagram.com/raw_meesam" target="_blank" class="btn-secondary mt-4 inline-block">
+    Follow Founder
+  </a>
+</section>
+
+<!-- CTA -->
+<section class="py-20 text-center px-6">
+  <h2 class="text-4xl mb-6">Ready to Master the Machine?</h2>
+
+  <form id="applyForm" class="max-w-md mx-auto space-y-4">
+    <input type="text" name="name" placeholder="Your Name" class="input" required>
+    <input type="email" name="email" placeholder="Email" class="input" required>
+    <button class="btn-primary w-full">Apply Now</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
